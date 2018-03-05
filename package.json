@@ -1,5 +1,5 @@
 {
-  "name": "payment",
+  "name": "@bedegaming/payment",
   "version": "2.3.0",
   "description": "A general purpose library for building credit card forms, validating inputs and formatting numbers. Base on jquery.payment by @stripe, but without the jQuery.",
   "keywords": [
@@ -15,12 +15,6 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "compile": "coffee -o lib/ --compile ./src/*.coffee",
-    "build": "NODE_ENV=production webpack",
-    "development": "coffee -o lib/ --compile --watch ./src/*.coffee",
-    "preversion": "npm run test",
-    "prepublish": "NODE_ENV=production npm run compile",
-    "postpublish": "git push origin master && git push --tags",
     "test": "karma start --single-run --browsers PhantomJS"
   },
   "devDependencies": {
